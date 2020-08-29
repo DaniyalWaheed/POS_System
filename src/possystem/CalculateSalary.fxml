@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXListView?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="700.0" prefWidth="1000.0" style="-fx-background-color: #9dccbc;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="possystem.CalculateSalaryController">
+    <stylesheets>
+        <URL value="@dashboard.css" />
+    </stylesheets>
+   <children>
+      <Label alignment="CENTER_RIGHT" layoutY="-2.0" prefHeight="71.0" prefWidth="129.0" style="-fx-background-color: #083d41;" text="P.O.S" textFill="WHITE">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="41.0" fitWidth="56.0" layoutX="14.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Resources/Shopping%20Cart%20Loaded_80px.png" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" layoutX="129.0" layoutY="-2.0" prefHeight="41.0" prefWidth="871.0" style="-fx-background-color: #083d41;" text="Point of Sale Software" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="129.0" layoutY="34.0" prefHeight="35.0" prefWidth="871.0" style="-fx-background-color: #083d41;" text="Ease of use. User Friendly Interface. Metro UI Design." textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutY="66.0" prefHeight="48.0" prefWidth="194.0" style="-fx-border-color: #083d41; -fx-background-color: #49a5a4;" text="Admin Panel" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <JFXListView layoutY="113.0" prefHeight="586.0" prefWidth="194.0" style="-fx-border-color: #083d41; -fx-background-color: #49a5a4;" />
+      <JFXButton layoutX="8.0" layoutY="120.0" onAction="#Dashboard" prefHeight="59.0" prefWidth="178.0" text="    Dashboard" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="8.0" layoutY="179.0" onAction="#Products" prefHeight="59.0" prefWidth="178.0" text="Product" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="8.0" layoutY="238.0" onAction="#Stock" prefHeight="59.0" prefWidth="178.0" text="Stock" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="8.0" layoutY="297.0" onAction="#Sales" prefHeight="59.0" prefWidth="178.0" text="Sales" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="8.0" layoutY="356.0" onAction="#Purchase" prefHeight="59.0" prefWidth="178.0" text="    Purchases" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="8.0" layoutY="415.0" onAction="#Worker" prefHeight="59.0" prefWidth="178.0" text="Worker" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXButton>
+      <ImageView disable="true" fitHeight="32.0" fitWidth="25.0" layoutX="38.0" layoutY="136.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Resources/Combo%20Chart_24px_2.png" />
+         </image>
+      </ImageView>
+      <ImageView disable="true" fitHeight="32.0" fitWidth="25.0" layoutX="38.0" layoutY="373.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Resources/Purchase%20Order_24px.png" />
+         </image>
+      </ImageView>
+      <ImageView disable="true" fitHeight="32.0" fitWidth="25.0" layoutX="38.0" layoutY="314.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Resources/Tags_24px.png" />
+         </image>
+      </ImageView>
+      <ImageView disable="true" fitHeight="32.0" fitWidth="25.0" layoutX="37.0" layoutY="432.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Resources/People_24px.png" />
+         </image>
+      </ImageView>
+      <ImageView disable="true" fitHeight="32.0" fitWidth="25.0" layoutX="38.0" layoutY="255.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Resources/View%20Details_24px.png" />
+         </image>
+      </ImageView>
+      <ImageView disable="true" fitHeight="32.0" fitWidth="25.0" layoutX="38.0" layoutY="196.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Resources/Buy_24px.png" />
+         </image>
+      </ImageView>
+      <TableView fx:id="table" layoutX="275.0" layoutY="373.0" prefHeight="210.0" prefWidth="644.0" style="-fx-background-color: #49a5a4; -fx-border-color: #083d41;">
+        <columns>
+          <TableColumn fx:id="id" maxWidth="200.0" minWidth="43.0" prefWidth="43.0" text="ID" />
+            <TableColumn fx:id="workerName" maxWidth="200.0" minWidth="50.0" prefWidth="181.0" text="Worker Name" />
+            <TableColumn fx:id="rate" maxWidth="200.0" minWidth="50.0" prefWidth="111.0" text="Rate" />
+          <TableColumn fx:id="weight" maxWidth="200.0" minWidth="50.0" prefWidth="165.0" text="Quantity" />
+            <TableColumn fx:id="amount" maxWidth="204.0" minWidth="50.0" prefWidth="141.0" text="Amount" />
+        </columns>
+      </TableView>
+      <Label layoutX="195.0" layoutY="113.0" prefHeight="48.0" prefWidth="805.0" style="-fx-background-color: #083d41;" text="Existing Contract Workers Details" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="240.0" layoutY="213.0" prefHeight="41.0" prefWidth="354.0" text="Enter Name of Worker for Calculate Salary">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="notFound" alignment="CENTER" layoutX="815.0" layoutY="277.0" prefHeight="41.0" prefWidth="129.0" text="Not Found" textFill="RED" visible="false">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="search" layoutX="690.0" layoutY="278.0" onAction="#search" prefHeight="41.0" prefWidth="129.0" text="Search" textFill="WHITE" />
+      <JFXButton layoutX="8.0" layoutY="475.0" onAction="#Settings" prefHeight="59.0" prefWidth="178.0" text="Settings" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXButton>
+      <ImageView disable="true" fitHeight="32.0" fitWidth="25.0" layoutX="36.0" layoutY="492.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Resources/gear%20(1).png" />
+         </image>
+      </ImageView>
+      <JFXButton layoutX="8.0" layoutY="534.0" onAction="#Logout" prefHeight="59.0" prefWidth="178.0" text="Logout" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXButton>
+      <ImageView disable="true" fitHeight="32.0" fitWidth="25.0" layoutX="38.0" layoutY="552.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Resources/Logout%20Rounded%20Left_32px.png" />
+         </image>
+      </ImageView>
+      <JFXTextField fx:id="name" layoutX="614.0" layoutY="217.0" prefHeight="35.0" prefWidth="281.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXTextField>
+      <JFXButton fx:id="save" layoutX="530.0" layoutY="613.0" onAction="#save" prefHeight="41.0" prefWidth="129.0" text="Save" textFill="WHITE" />
+   </children>
+</AnchorPane>

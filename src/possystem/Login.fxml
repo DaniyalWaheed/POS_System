@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" focusTraversable="true" prefHeight="380.0" prefWidth="650.0" style="-fx-background-color: #083d41;" styleClass="#083d41" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="possystem.LoginController">
+   <children>
+      <Pane prefHeight="390.0" prefWidth="325.0" style="-fx-background-color: #49a5a4;">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="10.0" layoutY="203.0" prefHeight="72.0" prefWidth="306.0" text="Point of Sale Software" textAlignment="JUSTIFY" textFill="WHITE">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="62.0" layoutY="104.0" prefHeight="114.0" prefWidth="211.0" text="P.O.S" textAlignment="JUSTIFY" textFill="WHITE">
+               <font>
+                  <Font size="40.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="43.0" fitWidth="48.0" layoutX="70.0" layoutY="140.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Resources/Shopping%20Cart%20Loaded_80px.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <JFXTextField id="textfield" fx:id="name" focusColor="BLACK" layoutX="395.0" layoutY="160.0" prefHeight="26.0" prefWidth="176.0" style="-fx-background-color: #49a5a4;" stylesheets="@Login.css" unFocusColor="BLACK">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXTextField>
+      <ImageView fitHeight="72.0" fitWidth="92.0" layoutX="443.0" layoutY="32.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Resources/User%20Shield_96px.png" />
+         </image>
+      </ImageView>
+      <Label id="label1" layoutX="439.0" layoutY="123.0" prefHeight="27.0" prefWidth="80.0" text="Username" textFill="#49a5a4">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="27.0" fitWidth="34.0" layoutX="358.0" layoutY="162.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Resources/Circled%20User%20Male_24px.png" />
+         </image>
+      </ImageView>
+      <JFXPasswordField id="label1" fx:id="password" focusColor="BLACK" layoutX="395.0" layoutY="240.0" prefHeight="30.0" prefWidth="176.0" style="-fx-background-color: #49a5a4;" unFocusColor="BLACK" />
+      <Label layoutX="439.0" layoutY="204.0" prefHeight="27.0" prefWidth="80.0" text="Password" textFill="#49a5a4">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="27.0" fitWidth="34.0" layoutX="358.0" layoutY="244.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Resources/Show%20Password_24px.png" />
+         </image>
+      </ImageView>
+      <JFXButton id="b1" layoutX="395.0" layoutY="300.0" onAction="#Login" prefHeight="34.0" prefWidth="176.0" stylesheets="@Login.css" text="Login" textFill="#083d41" />
+      <Label fx:id="error" alignment="CENTER" layoutX="374.0" layoutY="349.0" prefHeight="30.0" prefWidth="211.0" text="Wrong" textFill="RED" />
+   </children>
+</AnchorPane>

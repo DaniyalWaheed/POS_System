@@ -1,0 +1,28 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+
+
+.button{
+    -fx-background-color:  #49a5a4;
+    -fx-background-radius:22;
+    
+}
+
+.button:hover{
+    -fx-background-color:  #07899f;
+    -fx-border-radius:22;
+    -fx-border-color:black
+}
+
+.button:pressed{
+    -fx-background-color:  #083d41;
+    -fx-rotate:1
+}
+
+#text:hover{
+    /*-fx-background-color:  black;*/
+    /*-fx-border-color:#083d41;*/
+    /*-fx-border-radius:22;*/
+}
